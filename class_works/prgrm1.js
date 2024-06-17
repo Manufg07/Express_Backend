@@ -10,9 +10,12 @@ function log(req, res, next) {
 app.use(log);
 
 
-app.get('/', (req, res) => {
-    res.send('user order');
+app.get('/orders', (req, res) => {
+    res.send('Orderes by user');
 });
+app.get('/products', (req, res) => {
+    res.send('List of products');
+  });
 
 
 
